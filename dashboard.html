@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard - Stackly IT</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="menu.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <h2 class="logo">STACKLY</h2>
+  <div class="menu-icon" onclick="openMenu()">☰</div>
+</header>
+
+<!-- MENU -->
+<div class="menu" id="menu">
+  <div class="menu-box">
+    <span class="close" onclick="closeMenu()">✕</span>
+
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+<!-- DASHBOARD -->
+<section class="dashboard">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <h3>Dashboard</h3>
+
+    <ul>
+      <li>Overview</li>
+      <li>Projects</li>
+      <li>Clients</li>
+      <li>Analytics</li>
+      <li>Settings</li>
+    </ul>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="main">
+
+    <h1>Welcome Back 👋</h1>
+    <p>Your IT system overview</p>
+
+    <!-- STATS -->
+    <div class="stats">
+
+      <div class="card">
+        <h2>120+</h2>
+        <p>Projects</p>
+      </div>
+
+      <div class="card">
+        <h2>80+</h2>
+        <p>Clients</p>
+      </div>
+
+      <div class="card">
+        <h2>24/7</h2>
+        <p>Support</p>
+      </div>
+
+    </div>
+
+    <!-- RECENT ACTIVITY -->
+    <div class="activity">
+      <h2>Recent Activity</h2>
+
+      <p>✔ New project deployed</p>
+      <p>✔ Client meeting completed</p>
+      <p>✔ System update successful</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2026 Stackly IT Solutions</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

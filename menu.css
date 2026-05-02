@@ -1,0 +1,97 @@
+.menu {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  backdrop-filter: blur(12px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s;
+  z-index: 999;
+}
+
+.menu.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* BOX */
+.menu-box {
+  width: 85%;
+  max-width: 320px;
+  background: rgba(20,20,20,0.95);
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+
+  animation: menuPop 0.4s ease;
+}
+
+@keyframes menuPop {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* CLOSE */
+.close {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* LINKS */
+.menu-box a {
+  display: block;
+  margin: 10px 0;
+  padding: 14px;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #2a1a08, #3a220c);
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.menu-box a:hover {
+  background: orange;
+  color: black;
+}
+
+/* BUTTONS */
+.signup {
+  width: 100%;
+  margin-top: 15px;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid orange;
+  background: transparent;
+  color: orange;
+}
+
+.login {
+  width: 100%;
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 12px;
+  background: orange;
+  color: black;
+  font-weight: bold;
+}
+
+/* MOON ICON */
+.moon {
+  margin-top: 15px;
+  font-size: 22px;
+}

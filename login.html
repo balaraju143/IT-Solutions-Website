@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - Stackly</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body class="login-page">
+
+<!-- BACK BUTTON -->
+<a href="index.html" class="back-btn">← Home</a>
+
+<!-- TOP TEXT -->
+<div class="top-text">
+  <h1>WELCOME BACK</h1>
+  <p>"Return to the pinnacle of excellence."</p>
+</div>
+
+<!-- LOGIN CARD -->
+<div class="login-card">
+
+  <div class="logo">
+  <img src="images/logo.webp" alt="Stackly">
+</div>
+
+  <h3>THE STACKLY VAULT</h3>
+  <p class="desc">
+    Access your system dashboard, manage services,
+    and connect directly with our team.
+  </p>
+
+  <form id="loginForm">
+
+    <!-- EMAIL -->
+    <label>EMAIL ADDRESS</label>
+    <div class="input-box">
+      <i class="fas fa-envelope"></i>
+      <input type="email" placeholder="vip@example.com" required>
+    </div>
+
+    <!-- PASSWORD -->
+    <div class="label-row">
+      <label>PASSWORD</label>
+      <span class="forgot">Forgot Password?</span>
+    </div>
+
+    <div class="input-box">
+      <i class="fas fa-lock"></i>
+      <input type="password" placeholder="Enter your password" required>
+    </div>
+
+    <button type="submit" class="login-btn">ACCESS ACCOUNT</button>
+
+    <p class="signup-text">
+      New to Stackly? 
+      <a href="signup.html">Create an account</a>
+    </p>
+
+  </form>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
