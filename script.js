@@ -112,3 +112,59 @@ if (loginForm) {
     window.location.href = "dashboard.html";
   });
 }
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const loader = document.getElementById("loader");
+  const text = document.getElementById("text");
+
+  let message = "LOADING EXPERIENCE...";
+  let i = 0;
+
+  function typeText() {
+    if (!text) return;
+    text.innerHTML = "";
+
+    let typing = setInterval(() => {
+      if (i < message.length) {
+        text.innerHTML += message.charAt(i);
+        i++;
+      } else {
+        clearInterval(typing);
+      }
+    }, 40);
+
+    i = 0;
+  }
+
+  // Hide loader on first load
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      loader.classList.add("hide");
+    }, 500);
+  });
+
+  // 🔥 HANDLE CLICK (MAIN FIX)
+  document.querySelectorAll(".nav-link").forEach(link => {
+
+    link.addEventListener("click", function(e) {
+
+      e.preventDefault(); // STOP instant navigation
+
+      const url = this.href;
+
+      loader.classList.remove("hide");
+
+      typeText();
+
+      setTimeout(() => {
+        window.location.href = url;
+      }, 800);
+
+    });
+
+  });
+
+});

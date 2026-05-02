@@ -3,97 +3,155 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Dashboard - Stackly IT</title>
 
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="menu.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 </head>
 
 <body>
 
-<!-- HEADER -->
-<header class="header">
-  <h2 class="logo">STACKLY</h2>
-  <div class="menu-icon" onclick="openMenu()">☰</div>
-</header>
+<div id="loader">
+  <img src="images/logo.webp" class="loader-logo">
 
-<!-- MENU -->
-<div class="menu" id="menu">
-  <div class="menu-box">
-    <span class="close" onclick="closeMenu()">✕</span>
-
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="projects.html">Projects</a>
-    <a href="blog.html">Blog</a>
-    <a href="contact.html">Contact</a>
-  </div>
+  <h2 class="typing-text">
+    <span id="text"></span><span class="cursor">|</span>
+  </h2>
 </div>
 
-<!-- DASHBOARD -->
-<section class="dashboard">
+<!-- HEADER -->
+<header class="header dashboard-header">
 
-  <!-- SIDEBAR -->
-  <div class="sidebar">
-    <h3>Dashboard</h3>
-
-    <ul>
-      <li>Overview</li>
-      <li>Projects</li>
-      <li>Clients</li>
-      <li>Analytics</li>
-      <li>Settings</li>
-    </ul>
+  <div class="logo">
+    <img src="images/logo.webp">
   </div>
 
-  <!-- MAIN CONTENT -->
-  <div class="main">
+  <div class="header-buttons">
+    
+    <button class="exit-btn" onclick="window.location.href='index.html'">Exit Dashboard</button>
+  </div>
 
-    <h1>Welcome Back 👋</h1>
-    <p>Your IT system overview</p>
+</header>
 
-    <!-- STATS -->
-    <div class="stats">
+<!-- TITLE -->
 
-      <div class="card">
-        <h2>120+</h2>
-        <p>Projects</p>
-      </div>
 
-      <div class="card">
-        <h2>80+</h2>
-        <p>Clients</p>
-      </div>
+<!-- STATS CARDS -->
+<section class="stats">
 
-      <div class="card">
-        <h2>24/7</h2>
-        <p>Support</p>
-      </div>
+  <div class="card">
+    <h3>Website Visits</h3>
+    <h1>8,402</h1>
+    <p class="green">Up 5% this week</p>
+  </div>
 
-    </div>
-
-    <!-- RECENT ACTIVITY -->
-    <div class="activity">
-      <h2>Recent Activity</h2>
-
-      <p>✔ New project deployed</p>
-      <p>✔ Client meeting completed</p>
-      <p>✔ System update successful</p>
-    </div>
-
+  <div class="card">
+    <h3>Active Clients</h3>
+    <h1>124</h1>
+    <p class="yellow">Requires attention</p>
   </div>
 
 </section>
 
-<!-- FOOTER -->
-<footer class="footer">
-  <p>© 2026 Stackly IT Solutions</p>
-</footer>
+<!-- CHART -->
+<section class="chart-section">
+
+  <h2>REVENUE & TRAFFIC</h2>
+
+  <canvas id="myChart"></canvas>
+
+</section>
+
+<!-- SERVICE DISTRIBUTION -->
+<section class="chart-section">
+
+  <h2>SERVICE DISTRIBUTION</h2>
+
+  <canvas id="barChart"></canvas>
+
+</section>
+
+<!-- PROGRESS -->
+<section class="progress-section">
+
+  <h2>PROJECT STATUS</h2>
+
+  <div class="progress-box">
+    <span>Web Development</span>
+    <span>80%</span>
+    <div class="bar"><div class="fill blue" style="width:80%"></div></div>
+  </div>
+
+  <div class="progress-box">
+    <span>Cloud Migration</span>
+    <span>60%</span>
+    <div class="bar"><div class="fill orange" style="width:60%"></div></div>
+  </div>
+
+  <div class="progress-box">
+    <span>AI Integration</span>
+    <span>45%</span>
+    <div class="bar"><div class="fill purple" style="width:45%"></div></div>
+  </div>
+
+</section>
+
+<!-- SYSTEM STATUS -->
+<section class="status-section">
+
+  <h2>SYSTEM STATUS</h2>
+
+  <div class="status-item green-dot">Server Online</div>
+  <div class="status-item green-dot">Database Synced</div>
+  <div class="status-item green-dot">API Connected</div>
+  <div class="status-item yellow-dot">High CPU Usage</div>
+
+</section>
 
 <script src="script.js"></script>
+
+<script>
+// LINE CHART
+new Chart(document.getElementById("myChart"), {
+  type: "line",
+  data: {
+    labels: ["May","Jun","Jul","Aug","Sep","Oct"],
+    datasets: [
+      {
+        label: "Revenue",
+        data: [80000,90000,85000,105000,110000,125000],
+        borderColor: "orange",
+        tension: 0.4
+      },
+      {
+        label: "Visits",
+        data: [2000,2500,2700,3000,3200,3500],
+        borderColor: "cyan",
+        borderDash: [5,5]
+      }
+    ]
+  }
+});
+
+// BAR CHART
+new Chart(document.getElementById("barChart"), {
+  type: "bar",
+  data: {
+    labels: ["Web","Cloud","AI","Security"],
+    datasets: [{
+      data: [45,25,15,20],
+      backgroundColor: ["#4cc9f0","orange","#9d4edd","#2ec4b6"]
+    }]
+  }
+});
+</script>
 
 </body>
 </html>
