@@ -1,104 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - Stackly IT</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Stackly IT</title>
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="menu.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="menu.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+
+<!-- LOADER -->
 <div id="loader">
   <img src="images/logo.webp" class="loader-logo">
-
-  <h2 class="typing-text">
-    <span id="text"></span><span class="cursor">|</span>
-  </h2>
+  <h2><span id="text"></span><span class="cursor">|</span></h2>
 </div>
-
-
 
 <!-- HEADER -->
 <header class="header">
   <div class="logo">
-  <img src="images/logo.webp" alt="Stackly">
-</div>
+    <img src="images/logo.webp">
+  </div>
   <div class="menu-icon" onclick="openMenu()">☰</div>
 </header>
 
-<!-- MENU -->
-<div class="menu" id="menu">
-  <div class="menu-box">
-    <span class="close" onclick="closeMenu()">✕</span>
-
-    <a href="index.html" class="nav-link">Home</a>
-    <a href="about.html" class="nav-link">About Us</a>
-    <a href="services.html" class="nav-link">Services</a>
-    <a href="projects.html" class="nav-link">Projects</a>
-    <a href="blog.html" class="nav-link">Blog</a>
-    <a href="contact.html" class="nav-link">Contact</a>
-    <a href="dashboard.html" class="nav-link">Dashboard</a>
-    <a href="signup.html">
-  <button class="signup">Sign Up</button>
-</a>
-    <a href="login.html"><button class="login">Login</button></a>
-  </div>
-</div>
-
 <!-- HERO -->
-<section class="hero" style="background-image:url('https://images.unsplash.com/photo-1521791136064-7986c2920216')">
-  <div class="overlay"></div>
+<section class="contact-hero-new">
+  <div class="contact-overlay"></div>
 
-  <div class="hero-content">
-    <h4>CONTACT US</h4>
-
-    <h1>
-      LET’S<br>
-      <span>CONNECT</span>
-    </h1>
-
-    <p>
-      Reach out to us for innovative IT solutions and collaborations.
-    </p>
+  <div class="contact-hero-content">
+    <h1>LET’S CREATE<br><span>SMART SOLUTIONS</span></h1>
+    <p>Tell us your idea. We’ll turn it into reality.</p>
   </div>
 </section>
 
-<!-- CONTACT SECTION -->
-<section class="section reveal">
+<!-- QUICK CONTACT -->
+<section class="quick-contact reveal">
 
-  <h2>CONTACT</h2>
+  <div class="contact-card">
+    <i class="fas fa-phone"></i>
+    <h3>Call Us</h3>
+    <p>+91 9999999999</p>
+  </div>
 
-  <p>📍 Hyderabad, India</p>
-  <p>📞 +91 9999999999</p>
-  <p>📧 stackly@gmail.com</p>
+  <div class="contact-card">
+    <i class="fas fa-envelope"></i>
+    <h3>Email</h3>
+    <p>stackly@gmail.com</p>
+  </div>
 
-  <!-- NEWSLETTER -->
-  <h2>NEWSLETTER</h2>
+  <div class="contact-card">
+    <i class="fas fa-map-marker-alt"></i>
+    <h3>Location</h3>
+    <p>Hyderabad, India</p>
+  </div>
 
-  <input type="email" placeholder="Enter your email">
-  <button>SUBSCRIBE</button>
+</section>
 
-  <!-- SOCIAL -->
- <div class="socials">
+<!-- MAIN CONTACT -->
+<section class="contact-main reveal">
 
-  <a href="#"><i class="fab fa-linkedin-in"></i></a>
-  <a href="#"><i class="fab fa-instagram"></i></a>
-  <a href="#"><i class="fab fa-facebook-f"></i></a>
-  <a href="#"><i class="fab fa-twitter"></i></a>
+  <!-- LEFT INFO -->
+  <div class="contact-info">
 
-</div>
+    <h2>Why Work With Us?</h2>
+
+    <p>
+      We partner with startups and enterprises to build scalable IT systems.
+      Our team ensures high performance, security, and modern architecture.
+    </p>
+
+    <ul>
+      <li>✔ 24/7 Support</li>
+      <li>✔ Scalable Cloud Systems</li>
+      <li>✔ AI Powered Solutions</li>
+      <li>✔ Fast Delivery</li>
+    </ul>
+
+  </div>
+
+  <!-- RIGHT FORM -->
+  <div class="contact-form-box">
+
+    <h2>Start Your Project</h2>
+
+    <form class="contact-form-new">
+
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Email Address" required>
+
+      <select>
+        <option>Choose Service</option>
+        <option>Web Development</option>
+        <option>Cloud Solutions</option>
+        <option>AI Systems</option>
+      </select>
+
+      <textarea placeholder="Describe your project..."></textarea>
+
+      <button type="submit">Send Request</button>
+
+    </form>
+
+  </div>
+
+</section>
+
+<!-- PROCESS -->
+<section class="process-section reveal">
+
+  <h2>Our Process</h2>
+
+  <div class="process-grid">
+
+    <div class="process-box">
+      <h3>01</h3>
+      <p>Consultation</p>
+    </div>
+
+    <div class="process-box">
+      <h3>02</h3>
+      <p>Planning</p>
+    </div>
+
+    <div class="process-box">
+      <h3>03</h3>
+      <p>Development</p>
+    </div>
+
+    <div class="process-box">
+      <h3>04</h3>
+      <p>Deployment</p>
+    </div>
+
+  </div>
+
 </section>
 
 <!-- FOOTER -->
 <footer class="footer">
-  <p>© 2026 Stackly IT Solutions</p>
+  <p>© 2026 Stackly IT</p>
 </footer>
 
-<!-- JS -->
 <script src="script.js"></script>
 
 </body>

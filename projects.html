@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects - Stackly IT</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects - Stackly IT</title>
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="menu.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="menu.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
+<!-- LOADER -->
 <div id="loader">
   <img src="images/logo.webp" class="loader-logo">
-
-  <h2 class="typing-text">
-    <span id="text"></span><span class="cursor">|</span>
-  </h2>
+  <h2><span id="text"></span><span class="cursor">|</span></h2>
 </div>
-
 
 <!-- HEADER -->
 <header class="header">
   <div class="logo">
-  <img src="images/logo.webp" alt="Stackly">
-</div>
+    <img src="images/logo.webp">
+  </div>
   <div class="menu-icon" onclick="openMenu()">☰</div>
 </header>
 
@@ -35,119 +33,165 @@
   <div class="menu-box">
     <span class="close" onclick="closeMenu()">✕</span>
 
-    <a href="index.html" class="nav-link">Home</a>
-    <a href="about.html" class="nav-link">About Us</a>
-    <a href="services.html" class="nav-link">Services</a>
-    <a href="projects.html" class="nav-link">Projects</a>
-    <a href="blog.html" class="nav-link">Blog</a>
-    <a href="contact.html" class="nav-link">Contact</a>
-    <a href="dashboard.html" class="nav-link">Dashboard</a>
-    <a href="signup.html">
-  <button class="signup">Sign Up</button>
-</a>
-    <a href="login.html"><button class="login">Login</button></a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+    <a href="dashboard.html">Dashboard</a>
   </div>
 </div>
 
 <!-- HERO -->
-<section class="hero" style="background-image:url('https://images.unsplash.com/photo-1504639725590-34d0984388bd')">
+<section class="hero">
   <div class="overlay"></div>
-
   <div class="hero-content">
-    <h4>OUR PROJECTS</h4>
-
-    <h1>
-      REAL-WORLD<br>
-      <span>IT SOLUTIONS</span>
-    </h1>
-
-    <p>
-      Explore our portfolio of innovative and scalable technology solutions.
-    </p>
+    <h4>OUR WORK</h4>
+    <h1>REAL <span>PROJECTS</span></h1>
+    <p>Explore our latest IT solutions and case studies</p>
   </div>
 </section>
 
-<!-- PROJECT INTRO -->
-<section class="section reveal">
-  <h2>OUR WORK</h2>
+<!-- MOVING TEXT -->
+<section class="moving-text-section">
+  <div class="moving-text">
+    🚀 ENTERPRISE APPS • AI SYSTEMS • CLOUD PLATFORMS • DASHBOARDS • SECURITY SYSTEMS • API DEVELOPMENT 🚀
+  </div>
+</section>
 
+<!-- PROJECT GRID -->
+<section class="section reveal">
+
+<h2>FEATURED PROJECTS</h2>
+
+<div class="projects-grid">
+
+  <!-- ROW 1 -->
+  <div class="project-card">
+    <img src="https://images.unsplash.com/photo-1551281044-8c0d9c6d6d3b">
+    <div class="overlay-box">
+      <h3>AI Dashboard</h3>
+      <p>Real-time analytics system</p>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+    <div class="overlay-box">
+      <h3>Cloud Platform</h3>
+      <p>Enterprise cloud system</p>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+    <div class="overlay-box">
+      <h3>Automation Tool</h3>
+      <p>AI automation solution</p>
+    </div>
+  </div>
+
+  <!-- ROW 2 -->
+  <div class="project-card">
+    <img src="https://images.unsplash.com/photo-1526378722484-cc5c5101f02e">
+    <div class="overlay-box">
+      <h3>Data Analytics</h3>
+      <p>Big data processing system</p>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
+    <div class="overlay-box">
+      <h3>DevOps Pipeline</h3>
+      <p>CI/CD automation workflow</p>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd">
+    <div class="overlay-box">
+      <h3>Web Application</h3>
+      <p>Modern UI platform</p>
+    </div>
+  </div>
+
+  <!-- ROW 3 -->
+  <div class="project-card">
+    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b">
+    <div class="overlay-box">
+      <h3>Cybersecurity</h3>
+      <p>Secure infrastructure system</p>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="https://images.unsplash.com/photo-1535378620166-273708d44e4c">
+    <div class="overlay-box">
+      <h3>Machine Learning</h3>
+      <p>Predictive AI model</p>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5">
+    <div class="overlay-box">
+      <h3>Blockchain System</h3>
+      <p>Decentralized platform</p>
+    </div>
+  </div>
+
+</div>
+
+</section>
+
+<!-- PROJECT DETAILS -->
+<section class="section reveal">
+
+<h2>PROJECT IMPACT</h2>
+
+<div class="impact">
+
+  <div class="impact-box">
+    <h1>95%</h1>
+    <p>Efficiency Increase</p>
+  </div>
+
+  <div class="impact-box">
+    <h1>2x</h1>
+    <p>Faster Performance</p>
+  </div>
+
+  <div class="impact-box">
+    <h1>50+</h1>
+    <p>Systems Delivered</p>
+  </div>
+
+</div>
+
+</section>
+
+<!-- IMAGE + TEXT -->
+<section class="feature-image reveal">
+
+<img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1">
+
+<div class="feature-text">
+  <h2>REAL WORLD IMPLEMENTATIONS</h2>
   <p>
-    We have successfully delivered projects across industries including fintech,
-    healthcare, e-commerce, and enterprise solutions. Our work focuses on performance,
-    security, and user experience.
+    Our projects are built with scalability, performance,
+    and security in mind — powering businesses globally.
   </p>
-</section>
-
-<!-- PROJECT CARDS -->
-<section class="section reveal">
-  <h2>FEATURED PROJECTS</h2>
-
-  <div class="cards">
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c">
-      <h3>Cloud Management Platform</h3>
-      <p>Scalable cloud solution for enterprise systems.</p>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
-      <h3>AI Automation System</h3>
-      <p>AI-powered workflow automation platform.</p>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
-      <h3>E-Commerce Platform</h3>
-      <p>High-performance online marketplace solution.</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- ADDITIONAL PROJECTS -->
-<section class="section reveal">
-  <h2>MORE PROJECTS</h2>
-
-  <ul>
-    <li>✔ Banking Dashboard System</li>
-    <li>✔ Healthcare Data Platform</li>
-    <li>✔ Real-Time Analytics System</li>
-    <li>✔ Mobile App Solutions</li>
-  </ul>
-</section>
-
-<!-- CONTACT -->
-<section class="section reveal">
-
-  <h2>CONTACT</h2>
-
-  <p>📍 Hyderabad, India</p>
-  <p>📞 +91 9999999999</p>
-  <p>📧 stackly@gmail.com</p>
-
-  <h2>NEWSLETTER</h2>
-
-  <input type="email" placeholder="Enter your email">
-  <button>SUBSCRIBE</button>
-
- <div class="socials">
-
-  <a href="#"><i class="fab fa-linkedin-in"></i></a>
-  <a href="#"><i class="fab fa-instagram"></i></a>
-  <a href="#"><i class="fab fa-facebook-f"></i></a>
-  <a href="#"><i class="fab fa-twitter"></i></a>
-
 </div>
 
 </section>
 
 <!-- FOOTER -->
 <footer class="footer">
-  <p>© 2026 Stackly IT Solutions</p>
+  <p>© 2026 Stackly IT</p>
 </footer>
 
-<!-- JS -->
 <script src="script.js"></script>
 
 </body>

@@ -741,3 +741,256 @@ button {
   50% { opacity: 0; }
   100% { opacity: 1; }
 }
+
+
+
+
+/* STATS */
+.stats-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.stat-box {
+  background: #111;
+  padding: 20px;
+  border-radius: 15px;
+  width: 30%;
+}
+
+.stat-box h1 {
+  font-size: 30px;
+  color: orange;
+}
+
+/* HOVER IMAGE */
+.hover-zoom img {
+  transition: 0.4s;
+}
+
+.hover-zoom:hover img {
+  transform: scale(1.1);
+}
+
+/* FADE TEXT */
+.fade-text {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* LIST ANIMATION */
+.animated-list li {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: slideIn 0.5s forwards;
+}
+
+.animated-list li:nth-child(1) { animation-delay: 0.2s; }
+.animated-list li:nth-child(2) { animation-delay: 0.4s; }
+.animated-list li:nth-child(3) { animation-delay: 0.6s; }
+.animated-list li:nth-child(4) { animation-delay: 0.8s; }
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+/* MOVING TEXT */
+.moving-text-section {
+  overflow: hidden;
+  white-space: nowrap;
+  background: #111;
+  padding: 10px;
+}
+
+.moving-text {
+  display: inline-block;
+  animation: moveText 15s linear infinite;
+  color: orange;
+}
+
+@keyframes moveText {
+  from { transform: translateX(100%); }
+  to { transform: translateX(-100%); }
+}
+
+/* PROJECT GRID */
+.projects-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.project-card img {
+  width: 100%;
+  transition: 0.4s;
+}
+
+.project-card:hover img {
+  transform: scale(1.1);
+}
+
+/* OVERLAY */
+.overlay-box {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  padding: 10px;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.project-card:hover .overlay-box {
+  opacity: 1;
+}
+
+/* IMPACT */
+.impact {
+  display: flex;
+  justify-content: space-around;
+}
+
+.impact-box {
+  text-align: center;
+}
+
+.impact-box h1 {
+  color: orange;
+}
+
+/* FEATURE */
+.feature-image {
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+}
+
+.feature-image img {
+  width: 50%;
+}
+
+.feature-text {
+  width: 50%;
+}
+
+
+
+
+/* HERO */
+.contact-hero-new {
+  height: 80vh;
+  background: url("https://images.unsplash.com/photo-1498050108023-c5249f4df085") center/cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+}
+
+.contact-hero-content {
+  position: relative;
+  text-align: center;
+}
+
+.contact-hero-content span {
+  color: orange;
+}
+
+/* QUICK CARDS */
+.quick-contact {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.contact-card {
+  background: #111;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.4s;
+}
+
+.contact-card:hover {
+  transform: translateY(-10px);
+}
+
+/* MAIN */
+.contact-main {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+}
+
+.contact-info {
+  width: 50%;
+}
+
+.contact-form-box {
+  width: 50%;
+  background: #111;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+/* FORM */
+.contact-form-new {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form-new input,
+.contact-form-new textarea,
+.contact-form-new select {
+  padding: 12px;
+  background: #000;
+  color: white;
+  border: none;
+}
+
+.contact-form-new button {
+  background: orange;
+  padding: 12px;
+  border: none;
+}
+
+/* PROCESS */
+.process-grid {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.process-box {
+  text-align: center;
+}
+
+.process-box h3 {
+  color: orange;
+}
