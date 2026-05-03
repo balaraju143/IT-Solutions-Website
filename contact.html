@@ -6,10 +6,8 @@
 <title>Contact - Stackly IT</title>
 
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="menu.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
@@ -17,7 +15,7 @@
 <!-- LOADER -->
 <div id="loader">
   <img src="images/logo.webp" class="loader-logo">
-  <h2><span id="text"></span><span class="cursor">|</span></h2>
+  <h2>CONNECTING YOU...</h2>
 </div>
 
 <!-- HEADER -->
@@ -28,122 +26,159 @@
   <div class="menu-icon" onclick="openMenu()">☰</div>
 </header>
 
-<!-- HERO -->
-<section class="contact-hero-new">
-  <div class="contact-overlay"></div>
+<!-- MENU -->
+<div class="menu" id="menu">
+  <div class="menu-box">
+    <span onclick="closeMenu()">✕</span>
 
-  <div class="contact-hero-content">
-    <h1>LET’S CREATE<br><span>SMART SOLUTIONS</span></h1>
-    <p>Tell us your idea. We’ll turn it into reality.</p>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+     <a href="login.html">Login</a>
+    <a href="signup.html">Signup</a>
+    <a href="dashboard.html">Dashboard</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <h1>CONTACT <span>US</span></h1>
+    <p>Let’s build something great together</p>
   </div>
 </section>
 
-<!-- QUICK CONTACT -->
-<section class="quick-contact reveal">
-
-  <div class="contact-card">
-    <i class="fas fa-phone"></i>
-    <h3>Call Us</h3>
-    <p>+91 9999999999</p>
+<!-- MOVING TEXT -->
+<section class="moving-text-section">
+  <div class="moving-text">
+    🚀 GET IN TOUCH • START PROJECT • BUSINESS GROWTH • DIGITAL SOLUTIONS 🚀
   </div>
+</section>
 
-  <div class="contact-card">
-    <i class="fas fa-envelope"></i>
-    <h3>Email</h3>
-    <p>stackly@gmail.com</p>
-  </div>
+<!-- CONTACT CARDS -->
+<section class="cards reveal">
 
-  <div class="contact-card">
-    <i class="fas fa-map-marker-alt"></i>
-    <h3>Location</h3>
+  <div class="card">
+    <h3>📍 Location</h3>
     <p>Hyderabad, India</p>
   </div>
 
-</section>
-
-<!-- MAIN CONTACT -->
-<section class="contact-main reveal">
-
-  <!-- LEFT INFO -->
-  <div class="contact-info">
-
-    <h2>Why Work With Us?</h2>
-
-    <p>
-      We partner with startups and enterprises to build scalable IT systems.
-      Our team ensures high performance, security, and modern architecture.
-    </p>
-
-    <ul>
-      <li>✔ 24/7 Support</li>
-      <li>✔ Scalable Cloud Systems</li>
-      <li>✔ AI Powered Solutions</li>
-      <li>✔ Fast Delivery</li>
-    </ul>
-
+  <div class="card">
+    <h3>📞 Phone</h3>
+    <p>+91 9999999999</p>
   </div>
 
-  <!-- RIGHT FORM -->
-  <div class="contact-form-box">
+  <div class="card">
+    <h3>📧 Email</h3>
+    <p>stackly@gmail.com</p>
+  </div>
 
-    <h2>Start Your Project</h2>
+</section>
 
-    <form class="contact-form-new">
+<!-- CONTACT SECTION -->
+<section class="reveal">
 
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Email Address" required>
+<h2>START YOUR PROJECT</h2>
+
+<p>
+Tell us about your idea and we’ll help you turn it into a powerful digital solution.
+Our team will respond quickly with the best approach for your business.
+</p>
+
+</section>
+
+<!-- CONTACT FORM -->
+<section class="cards reveal">
+
+  <div class="card">
+
+    <form>
+
+      <input type="text" placeholder="Full Name" required><br><br>
+
+      <input type="email" placeholder="Email Address" required><br><br>
+
+      <input type="text" placeholder="Company Name"><br><br>
 
       <select>
-        <option>Choose Service</option>
+        <option>Select Service</option>
         <option>Web Development</option>
         <option>Cloud Solutions</option>
         <option>AI Systems</option>
-      </select>
+        <option>Cyber Security</option>
+      </select><br><br>
 
-      <textarea placeholder="Describe your project..."></textarea>
+      <textarea placeholder="Describe your project..." rows="4"></textarea><br><br>
 
-      <button type="submit">Send Request</button>
+      <button type="submit">Send Message</button>
 
     </form>
 
   </div>
 
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
+    <h3>Work With Experts</h3>
+    <p>
+      Our experienced developers and engineers deliver scalable,
+      secure, and high-performance IT solutions for modern businesses.
+    </p>
+  </div>
+
 </section>
 
 <!-- PROCESS -->
-<section class="process-section reveal">
+<section class="cards reveal">
 
-  <h2>Our Process</h2>
-
-  <div class="process-grid">
-
-    <div class="process-box">
-      <h3>01</h3>
-      <p>Consultation</p>
-    </div>
-
-    <div class="process-box">
-      <h3>02</h3>
-      <p>Planning</p>
-    </div>
-
-    <div class="process-box">
-      <h3>03</h3>
-      <p>Development</p>
-    </div>
-
-    <div class="process-box">
-      <h3>04</h3>
-      <p>Deployment</p>
-    </div>
-
+  <div class="card">
+    <h3>Step 1</h3>
+    <p>Requirement Analysis</p>
   </div>
+
+  <div class="card">
+    <h3>Step 2</h3>
+    <p>System Design</p>
+  </div>
+
+  <div class="card">
+    <h3>Step 3</h3>
+    <p>Development</p>
+  </div>
+
+  <div class="card">
+    <h3>Step 4</h3>
+    <p>Deployment</p>
+  </div>
+
+</section>
+
+<!-- CTA -->
+<section class="reveal" style="text-align:center">
+
+<h2>READY TO START?</h2>
+<p>Let’s create your next big project</p>
+
+<a href="index.html">
+  <button>Go Home</button>
+</a>
 
 </section>
 
 <!-- FOOTER -->
 <footer class="footer">
-  <p>© 2026 Stackly IT</p>
+  <p>© 2026 Stackly IT Solutions</p>
+
+ <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+
+  </div>
+
+
 </footer>
 
 <script src="script.js"></script>

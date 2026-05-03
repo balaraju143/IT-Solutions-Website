@@ -6,10 +6,8 @@
 <title>Blog - Stackly IT</title>
 
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="menu.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
@@ -17,7 +15,7 @@
 <!-- LOADER -->
 <div id="loader">
   <img src="images/logo.webp" class="loader-logo">
-  <h2><span id="text"></span><span class="cursor">|</span></h2>
+  <h2>LOADING EXPERIENCE...</h2>
 </div>
 
 <!-- HEADER -->
@@ -31,7 +29,7 @@
 <!-- MENU -->
 <div class="menu" id="menu">
   <div class="menu-box">
-    <span class="close" onclick="closeMenu()">✕</span>
+    <span onclick="closeMenu()">✕</span>
 
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -39,143 +37,132 @@
     <a href="projects.html">Projects</a>
     <a href="blog.html">Blog</a>
     <a href="contact.html">Contact</a>
+     <a href="login.html">Login</a>
+    <a href="signup.html">Signup</a>
     <a href="dashboard.html">Dashboard</a>
-
-    <a href="signup.html"><button class="signup">Sign Up</button></a>
-    <a href="login.html"><button class="login">Login</button></a>
   </div>
 </div>
 
 <!-- HERO -->
-<section class="hero blog-hero">
-  <div class="overlay"></div>
-
-  <div class="hero-content">
-    <h4>STACKLY INSIGHTS</h4>
-
-    <h1>
-      FUTURE OF <br>
-      <span>TECHNOLOGY</span>
-    </h1>
-
-    <p>Explore trends in AI, Cloud, and Digital Transformation</p>
+<section class="hero">
+  <div>
+    <h1>TECH <span>BLOG</span></h1>
+    <p>Insights, trends, and innovations in IT industry</p>
   </div>
 </section>
 
 <!-- MOVING TEXT -->
 <section class="moving-text-section">
   <div class="moving-text">
-    🚀 AI Innovation • Cloud Computing • Cybersecurity • Automation • Web Development • Future Tech 🚀
+    🚀 AI TRENDS • CLOUD COMPUTING • DEVOPS • SECURITY • DATA SCIENCE • FUTURE TECH 🚀
   </div>
-</section>
-
-<!-- BLOG CARDS -->
-<section class="section reveal">
-
-  <h2>LATEST ARTICLES</h2>
-
-  <div class="cards">
-
-    <div class="card hover-zoom">
-      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
-      <h3>AI Revolution</h3>
-      <p>How artificial intelligence is transforming industries worldwide.</p>
-    </div>
-
-    <div class="card hover-zoom">
-      <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c">
-      <h3>Cloud Future</h3>
-      <p>Scalable cloud architecture for modern businesses.</p>
-    </div>
-
-    <div class="card hover-zoom">
-      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
-      <h3>Web Development</h3>
-      <p>Modern UI trends and performance optimization techniques.</p>
-    </div>
-
-  </div>
-
 </section>
 
 <!-- FEATURE BLOG -->
-<section class="section reveal">
+<section class="cards reveal">
 
-  <h2>FEATURED STORY</h2>
-
-  <div class="feature-blog">
-
+  <div class="card">
     <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1">
-
-    <div class="feature-content">
-      <h3>Digital Transformation</h3>
-
-      <p>
-        Businesses are evolving rapidly with AI, automation, and cloud systems.
-        Learn how digital transformation helps companies scale globally.
-      </p>
-
-      <button class="btn">READ MORE</button>
-    </div>
-
+    <h3>Future of Artificial Intelligence</h3>
+    <p>
+      AI is transforming industries with automation, predictive analytics,
+      and intelligent systems.
+    </p>
   </div>
 
 </section>
 
-<!-- MORE BLOG GRID -->
-<section class="section reveal">
+<!-- BLOG GRID -->
+<section class="cards reveal">
 
-  <h2>MORE STORIES</h2>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c">
+    <h3>Cloud Computing Growth</h3>
+    <p>Why businesses are shifting to cloud platforms.</p>
+  </div>
 
-  <div class="cards">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+    <h3>AI Automation</h3>
+    <p>Reducing manual work using AI systems.</p>
+  </div>
 
-    <div class="card hover-zoom">
-      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
-      <h3>Cybersecurity</h3>
-      <p>Protect your systems with advanced security frameworks.</p>
-    </div>
-
-    <div class="card hover-zoom">
-      <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd">
-      <h3>Automation</h3>
-      <p>Reduce manual work using smart automation tools.</p>
-    </div>
-
-    <div class="card hover-zoom">
-      <img src="https://images.unsplash.com/photo-1526378722484-cc5c5101f02e">
-      <h3>Data Analytics</h3>
-      <p>Turn data into insights with powerful analytics systems.</p>
-    </div>
-
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+    <h3>Web Development Trends</h3>
+    <p>Modern UI/UX trends for scalable apps.</p>
   </div>
 
 </section>
 
-<!-- CONTACT -->
-<section class="section reveal">
+<!-- MORE BLOGS -->
+<section class="cards reveal">
 
-  <h2>CONTACT</h2>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1526378722484-cc5c5101f02e">
+    <h3>Big Data Systems</h3>
+    <p>Managing large-scale data efficiently.</p>
+  </div>
 
-  <p>📍 Hyderabad, India</p>
-  <p>📞 +91 9999999999</p>
-  <p>📧 stackly@gmail.com</p>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b">
+    <h3>Cybersecurity Essentials</h3>
+    <p>Protect systems from cyber threats.</p>
+  </div>
 
-  <h2>NEWSLETTER</h2>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd">
+    <h3>DevOps Workflow</h3>
+    <p>Continuous integration and deployment pipelines.</p>
+  </div>
 
-  <input type="email" placeholder="Your Email">
-  <button class="subscribe">SUBSCRIBE</button>
+</section>
 
-  <div class="socials">
-    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+<!-- BLOG CONTENT -->
+<section class="reveal">
+
+<h2>WHY OUR BLOG MATTERS</h2>
+
+<p>
+We share industry insights, technology updates, and expert knowledge
+to help businesses stay ahead in the digital world.
+</p>
+
+<ul style="margin-top:15px">
+  <li>✔ Latest IT trends</li>
+  <li>✔ Real-world case studies</li>
+  <li>✔ Technology insights</li>
+  <li>✔ Business transformation ideas</li>
+</ul>
+
+</section>
+
+<!-- CTA -->
+<section class="reveal" style="text-align:center">
+
+<h2>STAY UPDATED WITH TECHNOLOGY</h2>
+<p>Follow our blog for latest updates</p>
+
+<a href="contact.html">
+  <button>Subscribe Now</button>
+</a>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+<div class="socials">
+
+  <p>© 2026 Stackly IT Solutions</p>
+ <a href="#"><i class="fab fa-linkedin-in"></i></a>
     <a href="#"><i class="fab fa-instagram"></i></a>
     <a href="#"><i class="fab fa-facebook-f"></i></a>
     <a href="#"><i class="fab fa-twitter"></i></a>
+
   </div>
 
-</section>
 
-<footer class="footer">
-  <p>© 2026 Stackly IT</p>
 </footer>
 
 <script src="script.js"></script>

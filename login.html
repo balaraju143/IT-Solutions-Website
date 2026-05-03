@@ -6,73 +6,54 @@
 <title>Login - Stackly</title>
 
 <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
+<body>
 
-
-
-
-<body class="login-page">
-
-
-<!-- BACK BUTTON -->
-<a href="index.html" class="back-btn">← Home</a>
-
-<!-- TOP TEXT -->
-<div class="top-text">
-  <h1>WELCOME BACK</h1>
-  <p>"Return to the pinnacle of excellence."</p>
+<!-- LOADER -->
+<div id="loader">
+  <img src="images/logo.webp" class="loader-logo">
+  <h2>SECURE LOGIN...</h2>
 </div>
 
-<!-- LOGIN CARD -->
-<div class="login-card">
+<!-- BACK -->
+<a href="index.html" style="position:absolute;top:20px;left:20px;color:white;text-decoration:none;">← Home</a>
 
-  <div class="logo">
-  <img src="images/logo.webp" alt="Stackly">
-</div>
+<!-- LOGIN SECTION -->
+<section class="cards" style="height:100vh;align-items:center;">
 
-  <h3>THE STACKLY VAULT</h3>
-  <p class="desc">
-    Access your system dashboard, manage services,
-    and connect directly with our team.
-  </p>
+  <!-- LEFT IMAGE -->
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c">
+  </div>
 
-  <form id="loginForm">
+  <!-- RIGHT FORM -->
+  <div class="card">
 
-    <!-- EMAIL -->
-    <label>EMAIL ADDRESS</label>
-    <div class="input-box">
-      <i class="fas fa-envelope"></i>
-      <input type="email" placeholder="vip@example.com" required>
-    </div>
+    <h2>WELCOME BACK</h2>
+    <p>Access your dashboard securely</p>
 
-    <!-- PASSWORD -->
-    <div class="label-row">
-      <label>PASSWORD</label>
-      <span class="forgot">Forgot Password?</span>
-    </div>
+    <form>
 
-    <div class="input-box">
-      <i class="fas fa-lock"></i>
-      <input type="password" placeholder="Enter your password" required>
-    </div>
+      <input type="email" placeholder="Email Address" required><br><br>
 
-    <button type="submit" class="login-btn">ACCESS ACCOUNT</button>
+      <input type="password" placeholder="Password" required><br><br>
 
-    <p class="signup-text">
-      New to Stackly? 
-      <a href="signup.html">Create an account</a>
+      <button type="submit">Login</button>
+
+    </form>
+
+    <p style="margin-top:15px">
+      New user? <a href="signup.html" style="color:orange">Sign Up</a>
     </p>
 
-  </form>
+  </div>
 
-</div>
+</section>
 
-<script src="js/script.js"></script>
-
+<script src="script.js"></script>
 
 </body>
 </html>

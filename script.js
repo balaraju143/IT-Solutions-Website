@@ -1,170 +1,38 @@
-// =============================
-// MENU TOGGLE
-// =============================
-function openMenu() {
-  const menu = document.getElementById("menu");
-  menu.classList.add("active");
+// MENU
+function openMenu(){
+  document.getElementById("menu").classList.add("active");
+}
+function closeMenu(){
+  document.getElementById("menu").classList.remove("active");
 }
 
-function closeMenu() {
-  const menu = document.getElementById("menu");
-  menu.classList.remove("active");
-}
+// LOADER
+window.addEventListener("load",()=>{
+  setTimeout(()=>{
+    document.getElementById("loader").classList.add("hide");
+  },800);
+});
 
-// Close menu when clicking link
-document.querySelectorAll(".menu-box a").forEach(link => {
-  link.addEventListener("click", () => {
-    closeMenu();
+// CLICK LOADER
+document.querySelectorAll("a").forEach(link=>{
+  link.addEventListener("click",function(e){
+    const href=this.getAttribute("href");
+    if(!href || href.startsWith("#")) return;
+
+    e.preventDefault();
+    document.getElementById("loader").classList.remove("hide");
+
+    setTimeout(()=>{
+      window.location.href=href;
+    },600);
   });
 });
 
-
-// =============================
-// SCROLL REVEAL ANIMATION
-// =============================
-function revealOnScroll() {
-  const reveals = document.querySelectorAll(".reveal");
-
-  reveals.forEach((el) => {
-    const windowHeight = window.innerHeight;
-    const elementTop = el.getBoundingClientRect().top;
-
-    if (elementTop < windowHeight - 100) {
+// SCROLL ANIMATION
+window.addEventListener("scroll",()=>{
+  document.querySelectorAll(".reveal").forEach(el=>{
+    if(el.getBoundingClientRect().top < window.innerHeight-100){
       el.classList.add("active");
     }
   });
-}
-
-window.addEventListener("scroll", revealOnScroll);
-window.addEventListener("load", revealOnScroll);
-
-
-// =============================
-// STICKY HEADER EFFECT
-// =============================
-window.addEventListener("scroll", () => {
-  const header = document.querySelector(".header");
-
-  if (window.scrollY > 50) {
-    header.style.background = "rgba(0,0,0,0.8)";
-    header.style.backdropFilter = "blur(10px)";
-  } else {
-    header.style.background = "transparent";
-  }
-});
-
-
-// =============================
-// ACTIVE MENU LINK HIGHLIGHT
-// =============================
-const currentPage = window.location.pathname.split("/").pop();
-
-document.querySelectorAll(".menu-box a").forEach(link => {
-  if (link.getAttribute("href") === currentPage) {
-    link.style.background = "orange";
-    link.style.color = "black";
-  }
-});
-
-
-// =============================
-// PAGE LOAD FADE-IN
-// =============================
-document.body.style.opacity = "0";
-
-window.addEventListener("load", () => {
-  document.body.style.transition = "opacity 0.6s ease";
-  document.body.style.opacity = "1";
-});
-
-
-// =============================
-// BUTTON RIPPLE EFFECT
-// =============================
-document.querySelectorAll("button").forEach(btn => {
-  btn.addEventListener("click", function (e) {
-    const circle = document.createElement("span");
-    circle.classList.add("ripple");
-
-    const rect = this.getBoundingClientRect();
-    circle.style.left = e.clientX - rect.left + "px";
-    circle.style.top = e.clientY - rect.top + "px";
-
-    this.appendChild(circle);
-
-    setTimeout(() => {
-      circle.remove();
-    }, 500);
-  });
-});
-
-// ================= LOGIN FORM =================
-
-const loginForm = document.getElementById("loginForm");
-
-if (loginForm) {
-  loginForm.addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    alert("Login Successful 🚀");
-
-    // redirect to dashboard
-    window.location.href = "dashboard.html";
-  });
-}
-
-
-
-document.addEventListener("DOMContentLoaded", () => {
-
-  const loader = document.getElementById("loader");
-  const text = document.getElementById("text");
-
-  let message = "LOADING EXPERIENCE...";
-  let i = 0;
-
-  function typeText() {
-    if (!text) return;
-    text.innerHTML = "";
-
-    let typing = setInterval(() => {
-      if (i < message.length) {
-        text.innerHTML += message.charAt(i);
-        i++;
-      } else {
-        clearInterval(typing);
-      }
-    }, 40);
-
-    i = 0;
-  }
-
-  // Hide loader on first load
-  window.addEventListener("load", () => {
-    setTimeout(() => {
-      loader.classList.add("hide");
-    }, 500);
-  });
-
-  // 🔥 HANDLE CLICK (MAIN FIX)
-  document.querySelectorAll(".nav-link").forEach(link => {
-
-    link.addEventListener("click", function(e) {
-
-      e.preventDefault(); // STOP instant navigation
-
-      const url = this.href;
-
-      loader.classList.remove("hide");
-
-      typeText();
-
-      setTimeout(() => {
-        window.location.href = url;
-      }, 800);
-
-    });
-
-  });
-
 });

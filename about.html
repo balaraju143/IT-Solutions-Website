@@ -6,10 +6,8 @@
 <title>About - Stackly IT</title>
 
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="menu.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
@@ -17,15 +15,13 @@
 <!-- LOADER -->
 <div id="loader">
   <img src="images/logo.webp" class="loader-logo">
-  <h2 class="typing-text">
-    <span id="text"></span><span class="cursor">|</span>
-  </h2>
+  <h2>LOADING EXPERIENCE...</h2>
 </div>
 
 <!-- HEADER -->
 <header class="header">
   <div class="logo">
-    <img src="images/logo.webp" alt="Stackly">
+    <img src="images/logo.webp">
   </div>
   <div class="menu-icon" onclick="openMenu()">☰</div>
 </header>
@@ -33,141 +29,150 @@
 <!-- MENU -->
 <div class="menu" id="menu">
   <div class="menu-box">
-    <span class="close" onclick="closeMenu()">✕</span>
+    <span onclick="closeMenu()">✕</span>
 
     <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
+    <a href="about.html">About</a>
     <a href="services.html">Services</a>
     <a href="projects.html">Projects</a>
     <a href="blog.html">Blog</a>
     <a href="contact.html">Contact</a>
+    <a href="login.html">Login</a>
+    <a href="signup.html">Signup</a>
     <a href="dashboard.html">Dashboard</a>
-
-    <a href="signup.html"><button class="signup">Sign Up</button></a>
-    <a href="login.html"><button class="login">Login</button></a>
   </div>
 </div>
 
 <!-- HERO -->
-<section class="hero about-hero">
-  <div class="overlay"></div>
-
-  <div class="hero-content">
-    <h4>ABOUT STACKLY</h4>
-
-    <h1>
-      BUILDING <br>
-      <span>FUTURE</span> <br>
-      TECHNOLOGY
-    </h1>
-
-    <p>
-      We create powerful IT solutions that transform businesses into
-      scalable digital platforms.
-    </p>
+<section class="hero">
+  <div>
+    <h1>ABOUT <span>STACKLY</span></h1>
+    <p>We build future-ready digital systems</p>
   </div>
 </section>
 
-<!-- ABOUT -->
-<section class="section reveal">
-  <h2>WHO WE ARE</h2>
+<!-- MOVING TEXT -->
+<section class="moving-text-section">
+  <div class="moving-text">
+    🚀 INNOVATION • AI • CLOUD • SCALABILITY • SECURITY • PERFORMANCE 🚀
+  </div>
+</section>
 
-  <p class="fade-text">
-    Stackly IT Solutions is a modern technology company focused on building
-    scalable, secure, and high-performance systems.
-    We specialize in cloud computing, AI automation, and enterprise applications.
-  </p>
+<!-- ABOUT INTRO -->
+<section class="reveal">
+
+<h2>WHO WE ARE</h2>
+
+<p>
+Stackly IT Solutions is a modern technology company focused on building
+high-performance applications, cloud systems, and AI-powered platforms.
+We help businesses scale using reliable and secure digital solutions.
+</p>
+
+</section>
+
+<!-- IMAGE + TEXT -->
+<section class="cards reveal">
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c">
+    <h3>Cloud Architecture</h3>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+    <h3>AI Development</h3>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+    <h3>Web Platforms</h3>
+  </div>
+
 </section>
 
 <!-- STATS -->
-<section class="stats-section reveal">
+<section class="cards reveal">
 
-  <div class="stat-box">
-    <h1 class="counter" data-target="98">90</h1>
-    <p>PROJECT SUCCESS RATE</p>
+  <div class="card">
+    <h2>98%</h2>
+    <p>Project Success</p>
   </div>
 
-  <div class="stat-box">
-    <h1 class="counter" data-target="250">50</h1>
-    <p>CLIENTS SERVED</p>
+  <div class="card">
+    <h2>250+</h2>
+    <p>Clients Served</p>
   </div>
 
-  <div class="stat-box">
-    <h1 class="counter" data-target="120">85</h1>
-    <p>PROJECTS COMPLETED</p>
+  <div class="card">
+    <h2>120+</h2>
+    <p>Projects Completed</p>
   </div>
 
 </section>
 
-<!-- SERVICES -->
-<section class="feature reveal">
+<!-- WHY US -->
+<section class="reveal">
 
-  <h1>OUR EXPERTISE</h1>
+<h2>WHY CHOOSE US</h2>
 
-  <p>
-    Delivering scalable IT solutions powered by cloud computing,
-    AI automation, and enterprise security.
-  </p>
+<p>
+We combine innovation with expertise to deliver scalable systems.
+Our team ensures high-quality development with modern technologies.
+</p>
 
-  <ul class="animated-list">
-    <li>✔ Cloud Infrastructure</li>
-    <li>✔ AI & Machine Learning</li>
-    <li>✔ Web & App Development</li>
-    <li>✔ Cybersecurity Solutions</li>
-  </ul>
+<ul style="margin-top:15px">
+  <li>✔ Scalable Architecture</li>
+  <li>✔ Secure Systems</li>
+  <li>✔ AI Integration</li>
+  <li>✔ 24/7 Support</li>
+</ul>
 
 </section>
 
-<!-- TECHNOLOGY CARDS -->
-<section class="section reveal">
-  <h2>OUR TECHNOLOGY</h2>
+<!-- FEATURE IMAGE -->
+<section class="cards reveal">
 
-  <div class="cards">
-
-    <div class="card hover-zoom">
-      <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c">
-      <h3>Cloud Solutions</h3>
-    </div>
-
-    <div class="card hover-zoom">
-      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
-      <h3>AI Systems</h3>
-    </div>
-
-    <div class="card hover-zoom">
-      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
-      <h3>Software Development</h3>
-    </div>
-
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1">
+    <h3>Enterprise Solutions</h3>
   </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1526378722484-cc5c5101f02e">
+    <h3>Data Systems</h3>
+  </div>
+
 </section>
 
-<!-- CONTACT -->
-<section class="section reveal">
+<!-- CTA -->
+<section class="reveal" style="text-align:center">
 
-  <h2>CONTACT</h2>
+<h2>READY TO WORK WITH US?</h2>
+<p>Let’s build your next big solution</p>
 
-  <p>📍 Hyderabad, India</p>
-  <p>📞 +91 9999999999</p>
-  <p>📧 stackly@gmail.com</p>
-
-  <h2>NEWSLETTER</h2>
-
-  <input type="email" placeholder="Your Email">
-  <button class="subscribe">SUBSCRIBE</button>
-
-  <div class="socials">
-    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-facebook-f"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
-  </div>
+<a href="contact.html">
+  <button>Contact Now</button>
+</a>
 
 </section>
 
 <!-- FOOTER -->
 <footer class="footer">
   <p>© 2026 Stackly IT Solutions</p>
+
+<div class="socials">
+
+    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+
+  </div>
+
+
+
+
 </footer>
 
 <script src="script.js"></script>

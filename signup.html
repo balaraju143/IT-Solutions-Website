@@ -3,60 +3,59 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sign Up - Stackly</title>
+<title>Signup - Stackly</title>
 
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="signup-page">
+<body>
 
-<!-- BACK BUTTON -->
-<a href="index.html" class="back-btn">← Home</a>
-
-<!-- TOP TEXT -->
-<div class="top-text">
-  <h1>JOIN THE ELITE</h1>
-  <p>"Excellence is not an act, but a habit."</p>
+<!-- LOADER -->
+<div id="loader">
+  <img src="images/logo.webp" class="loader-logo">
+  <h2>CREATING ACCOUNT...</h2>
 </div>
 
-<!-- CARD -->
-<div class="signup-card">
+<!-- BACK -->
+<a href="index.html" style="position:absolute;top:20px;left:20px;color:white;text-decoration:none;">← Home</a>
 
-  <div class="logo">
-  <img src="images/logo.webp" alt="Stackly">
-</div>
+<!-- SIGNUP SECTION -->
+<section class="cards" style="height:100vh;align-items:center;">
 
-  <h3>WELCOME TO STACKLY</h3>
-  <p class="desc">
-    Unlock exclusive IT solutions, priority access,
-    and personalized services.
-  </p>
+  <!-- FORM -->
+  <div class="card">
 
-  <form id="signupForm">
+    <h2>CREATE ACCOUNT</h2>
+    <p>Join Stackly IT Solutions</p>
 
-    <label>FULL NAME</label>
-    <input type="text" required>
+    <form>
 
-    <label>EMAIL ADDRESS</label>
-    <input type="email" required>
+      <input type="text" placeholder="Full Name" required><br><br>
 
-    <label>PASSWORD</label>
-    <input type="password" required>
+      <input type="email" placeholder="Email Address" required><br><br>
 
-    <label>CONFIRM PASSWORD</label>
-    <input type="password" required>
+      <input type="password" placeholder="Password" required><br><br>
 
-    <button type="submit" class="register">REGISTER</button>
+      <input type="password" placeholder="Confirm Password" required><br><br>
 
-    <p class="login-text">
-      Already have an account? 
-      <a href="login.html">Login here</a>
+      <button type="submit">Sign Up</button>
+
+    </form>
+
+    <p style="margin-top:15px">
+      Already have account? <a href="login.html" style="color:orange">Login</a>
     </p>
 
-  </form>
+  </div>
 
-</div>
+  <!-- IMAGE -->
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
+  </div>
+
+</section>
 
 <script src="script.js"></script>
 
